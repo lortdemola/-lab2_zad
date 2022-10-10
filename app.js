@@ -1,7 +1,19 @@
 const _ = require('lodash');
-function sum(){
-  console.log( _.mean(arguments));
+
+
+module.exports = class app {
+  constructor(items) {
+    this.newtab = _.filter(items, item => _.isNumber(item));
+  }
+  AVG() {
+    console.log( _.mean(this.newtab));
+  }
+  MAX() {
+    console.log( _.max(this.newtab));
+  }
+  
+  MIN() {
+    console.log( _.min(this.newtab));
+  }
+  
 }
-
-
-sum(1,2,3,4,5);
