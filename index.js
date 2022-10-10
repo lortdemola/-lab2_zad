@@ -37,10 +37,16 @@ undefined,
 ];
 
 const zad1 = new app([9,1,2,3,4,5])
+console.log('\n\nsredniam tablicy :\n');
 zad1.AVG();
+console.log('\n\nmaximum tablicy :\n');
 zad1.MAX();
+console.log('\n\nminimum tablicy :\n');
 zad1.MIN();
+console.log('\n\nUser data :\n');
 zad1.USER(user);
+console.log('\n\nprzedmiot z waga 1 :\n');
 zad1.FIND(user);
+console.log('\n\nwypisanie emaili :\n');
 zad1.GETmail(collections);
 
